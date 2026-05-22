@@ -29,7 +29,7 @@ export function Init() {
 
       {/* Hero Section */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="lg:col-span-8 space-y-6"
@@ -46,7 +46,7 @@ export function Init() {
             RTL Design Engineer with experience in FPGA-based system design and SoC integration, specializing in AXI-based interconnects, DMA-driven memory subsystems, and high-speed data paths. M.Tech in VLSI Design from NIT Surathkal.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
-            <a 
+            <a
               href="/SantuSardar_Resume (1).pdf"
               download
               className="flex items-center gap-2 px-8 py-3 border border-silicon-cyan text-silicon-cyan font-mono text-xs font-bold tracking-widest hover:bg-silicon-cyan hover:text-silicon-black transition-all duration-300 shadow-[0_0_20px_rgba(0,219,231,0.1)] cursor-pointer"
@@ -54,8 +54,8 @@ export function Init() {
               <Download className="w-4 h-4" />
               DOWNLOAD FULL PDF RESUME
             </a>
-            <a 
-              href="https://github.com"
+            <a
+              href="https://github.com/sardsrsantu-vlsitech"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-8 py-3 glass-card text-white font-mono text-xs font-bold tracking-widest hover:bg-white/10 transition-all duration-300 cursor-pointer"
@@ -66,7 +66,7 @@ export function Init() {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
@@ -74,8 +74,8 @@ export function Init() {
         >
           <div className="absolute -inset-1 bg-gradient-to-r from-silicon-cyan to-secondary rounded-lg blur opacity-10 group-hover:opacity-30 transition duration-1000" />
           <div className="relative aspect-square glass-substrate flex items-center justify-center p-8 overflow-hidden group">
-            <img 
-              alt="Hardware Microchip" 
+            <img
+              alt="Hardware Microchip"
               className="w-full h-full object-contain opacity-80 mix-blend-luminosity grayscale group-hover:grayscale-0 transition-all duration-700"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ9c3nFfmG5FWQ3DwKjljknaQru66bdCFfEnVEHIQ2UhZrS8kofkLZyFZgJ1nkSsSZYbGA53zMS0sXq09v3w8NqDY4Yqt3ZRaGSpWzh583HJWliUYcoNQCtQBfPSyOylXMlU5lrDKm_1FDv0VHRC2fVjH_49SVbRwufgrXEVB0cMTU9b__8ickAHMrg4Abr6Zf787qYO8GnMQ9ERULo_3TOBthXOIw4Y1kV-FCus_92XGqzNVbK-3eJrqpcqmPalsLY9jaTbU8ZSmA"
               referrerPolicy="no-referrer"
@@ -92,29 +92,29 @@ export function Init() {
           <h2 className="font-display text-2xl font-bold text-white tracking-tight">SKILLS_MATRIX</h2>
           <span className="font-mono text-xs text-white/30 mb-1 tracking-widest">[v2.0_STABLE]</span>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <SkillCard 
-            icon={<Chip className="w-5 h-5" />} 
-            level="LVL_09" 
-            title="Hardware Languages" 
-            progress={90} 
+          <SkillCard
+            icon={<Chip className="w-5 h-5" />}
+            level="LVL_09"
+            title="Hardware Languages"
+            progress={90}
             tags={["VERILOG HDL", "SPINALHDL", "C/C++"]}
             accent="silicon-cyan"
           />
-          <SkillCard 
-            icon={<Layers className="w-5 h-5" />} 
-            level="LVL_08" 
-            title="EDA Tools" 
-            progress={85} 
+          <SkillCard
+            icon={<Layers className="w-5 h-5" />}
+            level="LVL_08"
+            title="EDA Tools"
+            progress={85}
             tags={["VIVADO", "VITIS", "QUARTUS", "VERILATOR"]}
             accent="secondary"
           />
-          <SkillCard 
-            icon={<Activity className="w-5 h-5" />} 
-            level="LVL_08" 
-            title="Protocols" 
-            progress={88} 
+          <SkillCard
+            icon={<Activity className="w-5 h-5" />}
+            level="LVL_08"
+            title="Protocols"
+            progress={88}
             tags={["AXI4", "APB", "SPI", "MEMORY-MAPPED"]}
             accent="primary"
           />
@@ -126,23 +126,23 @@ export function Init() {
         <h2 className="font-display text-2xl font-bold text-white flex items-center gap-4">
           <History className="w-6 h-6 text-silicon-cyan" /> EXPERIENCE_TIMELINE
         </h2>
-        
+
         <div className="relative border-l border-white/5 ml-4 pl-12 space-y-16">
-          <TimelineItem 
+          <TimelineItem
             period="JULY 2025 - PRESENT"
             title="Digital IC / SoC Design Engineer"
             org="DeepGrid Semi Pvt. Ltd."
             desc="Implemented a ternary-weight systolic matrix multiplier for AI inference. Validated on FPGA (Arty A7-100T) using Microblaze, executing Bitnet MCU inference over AXI GPIO. Integrated DMA and AXI-based data paths."
             accent="silicon-cyan"
           />
-          <TimelineItem 
+          <TimelineItem
             period="JAN 2025 - JUNE 2025"
             title="Digital IC Design Intern"
             org="DeepGrid Semi Pvt. Ltd."
             desc="Developed Verilog RTL for Softmax, ReLU and GeLU modules for AI accelerator. Performed functional verification using Xilinx Vivado."
             accent="secondary"
           />
-          <TimelineItem 
+          <TimelineItem
             period="AUG 2023 - JUNE 2025"
             title="M.Tech in VLSI Design"
             org="NIT Karnataka Surathkal"
@@ -168,11 +168,11 @@ export function Init() {
           <h2 className="font-display text-2xl font-bold text-white">SECURE_COMMUNICATION</h2>
           <p className="font-mono text-sm text-white/40 tracking-widest uppercase">Initialize encrypted handshake for collaboration</p>
         </div>
-        
+
         <div className="glass-substrate p-8 border border-silicon-cyan/20 relative overflow-hidden group">
           <div className="absolute top-0 right-0 p-4 font-mono text-[10px] text-silicon-cyan/20 uppercase tracking-widest group-hover:text-silicon-cyan/40 transition-colors">Encryption: AES-256 Enabled</div>
           <div className="scanline absolute inset-0 pointer-events-none" />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
             {/* Left Column: Details */}
             <div className="space-y-6">
@@ -183,7 +183,7 @@ export function Init() {
               <div className="space-y-2">
                 <div className="font-mono text-[10px] font-bold text-white/40 tracking-widest uppercase border-b border-white/5 pb-2">PUBLIC_KEY_FINGERPRINT</div>
                 <div className="font-mono text-xs text-white/60 break-all pt-2 opacity-70">
-                  4F9A 8B2C 1E7D 5634<br/>
+                  4F9A 8B2C 1E7D 5634<br />
                   90F1 C2A3 B4E5 D6F7
                 </div>
               </div>
@@ -208,7 +208,7 @@ export function Init() {
                   {
                     title: "GitHub",
                     icon: <IconBrandGithub className="h-full w-full text-silicon-cyan" />,
-                    href: "https://github.com",
+                    href: "https://github.com/sardsrsantu-vlsitech",
                   },
                   {
                     title: "LinkedIn",
@@ -242,13 +242,12 @@ export function Init() {
 
 function SkillCard({ icon, level, title, progress, tags, accent }) {
   return (
-    <motion.div 
+    <motion.div
       whileHover={{ y: -5 }}
-      className={`glass-substrate p-6 space-y-4 border-l-4 group transition-all duration-300 ${
-        accent === "silicon-cyan" ? "border-l-silicon-cyan hover:bg-silicon-cyan/5" : 
-        accent === "secondary" ? "border-l-secondary hover:bg-secondary/5" : 
-        "border-l-primary hover:bg-primary/5"
-      }`}
+      className={`glass-substrate p-6 space-y-4 border-l-4 group transition-all duration-300 ${accent === "silicon-cyan" ? "border-l-silicon-cyan hover:bg-silicon-cyan/5" :
+          accent === "secondary" ? "border-l-secondary hover:bg-secondary/5" :
+            "border-l-primary hover:bg-primary/5"
+        }`}
     >
       <div className="flex justify-between items-start">
         <div className={`transition-colors duration-300 ${accent === "silicon-cyan" ? "text-silicon-cyan" : accent === "secondary" ? "text-secondary" : "text-primary"}`}>
@@ -259,15 +258,14 @@ function SkillCard({ icon, level, title, progress, tags, accent }) {
       <h3 className="font-display text-xl font-bold text-white tracking-tight">{title}</h3>
       <div className="space-y-3">
         <div className="h-0.5 w-full bg-white/5">
-          <motion.div 
+          <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: `${progress}%` }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className={`h-full shadow-[0_0_8px_currentColor] ${
-              accent === "silicon-cyan" ? "bg-silicon-cyan text-silicon-cyan" : 
-              accent === "secondary" ? "bg-secondary text-secondary" : 
-              "bg-primary text-primary"
-            }`} 
+            className={`h-full shadow-[0_0_8px_currentColor] ${accent === "silicon-cyan" ? "bg-silicon-cyan text-silicon-cyan" :
+                accent === "secondary" ? "bg-secondary text-secondary" :
+                  "bg-primary text-primary"
+              }`}
           />
         </div>
         <div className="flex flex-wrap gap-2">
@@ -284,18 +282,17 @@ function SkillCard({ icon, level, title, progress, tags, accent }) {
 
 function TimelineItem({ period, title, org, desc, accent }) {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0, x: -10 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       className="relative group pr-4"
     >
       <span className="absolute -left-[54px] top-0 w-11 h-11 glass-substrate flex items-center justify-center transition-all duration-500 group-hover:bg-white/10">
-        <span className={`w-2 h-2 shadow-[0_0_10px_currentColor] transition-transform duration-500 group-hover:scale-150 ${
-          accent === "silicon-cyan" ? "bg-silicon-cyan text-silicon-cyan" : 
-          accent === "secondary" ? "bg-secondary text-secondary" : 
-          "bg-primary text-primary"
-        }`} />
+        <span className={`w-2 h-2 shadow-[0_0_10px_currentColor] transition-transform duration-500 group-hover:scale-150 ${accent === "silicon-cyan" ? "bg-silicon-cyan text-silicon-cyan" :
+            accent === "secondary" ? "bg-secondary text-secondary" :
+              "bg-primary text-primary"
+          }`} />
       </span>
       <div className="space-y-1">
         <span className="font-mono text-[10px] font-bold text-silicon-cyan tracking-[0.2em]">{period}</span>

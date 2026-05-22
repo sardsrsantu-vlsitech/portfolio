@@ -146,7 +146,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-8">
                     <FooterLink href="https://www.linkedin.com/in/santu-sardar-054317268/" icon={<Linkedin size={18} />} label="LINKEDIN" />
-                    <FooterLink href="https://github.com" icon={<Github size={18} />} label="GITHUB" />
+                    <FooterLink href="https://github.com/sardsrsantu-vlsitech" icon={<Github size={18} />} label="GITHUB" />
                     <FooterLink href="tel:8274039680" icon={<Phone size={18} />} label="PHONE" />
                     <FooterLink href="mailto:sardsrsantu@gmail.com" icon={<Mail size={18} />} label="MAIL" />
                 </div>
